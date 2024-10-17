@@ -1,0 +1,26 @@
+
+#! NOTES
+
+1. Know about "abc" module which is used to implement Abstract Base Classes (ABC) in Python.
+2. Know about abstract method and static method in Python.
+
+** Use "https://julius.ai/" for performing EDA tasks by just uploading the dataset and asking it to do certain tasks.
+Example -> "
+I uploaded the file: AmesHousing.csv
+How many columns are there and which columns contains space or null value? Give me those column names and plot a graph to show the numbers too
+"
+
+#? Always use Factory Design Pattern in your project i.e concept of using interface and factory.
+* Refer explanations/factory_design_patter.py
+
+"
+Abstract Class: A class that serves as a template and cannot be instantiated directly. It may contain both abstract and concrete methods.
+Abstract Method: A method within an abstract class that must be implemented by any subclass. It has no implementation in the abstract class itself.
+"
+
+Always ensure these key elements in your project:
+* Type Checks
+* Readability
+* Handling Errors
+* Documentation
+* Testing

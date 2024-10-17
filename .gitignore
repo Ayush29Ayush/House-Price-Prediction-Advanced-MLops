@@ -1,0 +1,21 @@
+# Ignore documentation files
+Installing and Setting Project.docx
+
+# Ignore zip files
+*.zip
+
+# Ignore specific image files and folders
+NOTES Images
+Trial
+
+# Ignore any other temporary or cache files
+__pycache__/
+*.pyc
+*.pkl
+*.ipynb_checkpoints/
+*.log
+
+# Ignore environment files
+.env
+venv/
+*.egg-info/
