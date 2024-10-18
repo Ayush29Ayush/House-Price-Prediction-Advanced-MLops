@@ -1,8 +1,8 @@
 # Ignore documentation files
 Installing and Setting Project.docx
 
-# Ignore zip files
-*.zip
+# # Ignore zip files
+# *.zip
 
 # Ignore specific image files and folders
 NOTES Images
