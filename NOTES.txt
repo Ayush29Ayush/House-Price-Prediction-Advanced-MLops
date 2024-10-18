@@ -29,3 +29,5 @@ Always ensure these key elements in your project:
 * Refer explanations/strategy_design_patter.py
 
 #TODO => Start EDA in analysis/EDA.ipynb
+
+1. Always split the functionalities into different files and import and use the required ones to perform EDA. This way the main code file remains clean and readable.
