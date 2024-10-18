@@ -24,3 +24,8 @@ Always ensure these key elements in your project:
 * Handling Errors
 * Documentation
 * Testing
+
+#? Always use Strategy Design Pattern in your project i.e concept of using interface, strategy and context(helps to switch different strategies).
+* Refer explanations/strategy_design_patter.py
+
+#TODO => Start EDA in analysis/EDA.ipynb
