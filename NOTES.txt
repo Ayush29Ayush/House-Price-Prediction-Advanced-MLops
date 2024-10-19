@@ -31,3 +31,31 @@ Always ensure these key elements in your project:
 #TODO => Start EDA in analysis/EDA.ipynb
 
 1. Always split the functionalities into different files and import and use the required ones to perform EDA. This way the main code file remains clean and readable.
+
+#! Why we did univariate analysis?
+
+Here are some specific reasons why we did univariate analysis:
+
+* To understand the distribution of the target variable. This is important because it helps us to understand the range of values that the model will need to predict. 
+* To identify any outliers in the data. Outliers can have a significant impact on the performance of machine learning models. By identifying outliers, we can take steps to either remove them from the data or treat them appropriately.
+* To understand the relationships between the features and the target variable. This can help us to identify which features are most important for predicting the target variable.
+* To identify any missing values in the data. Missing values can also have a significant impact on the performance of machine learning models. By identifying missing values, we can take steps to either impute them or remove them from the data.
+
+#! Why we did bivariate analysis?
+
+Bivariate analysis in EDA is used to explore the relationships between pairs of variables. This helps to identify correlations, patterns, and dependencies that might influence the target variable.
+
+Here are three key reasons why bivariate analysis is conducted:
+
+* Correlation analysis: To measure the strength and direction of the relationship between two variables. This can help identify features that are highly correlated with the target variable, which can be useful for feature selection.
+* Pattern recognition: To discover trends, patterns, or associations between variables. This can provide insights into the underlying mechanisms driving the target variable.
+* Hypothesis testing: To test hypotheses about the relationships between variables. For example, you might want to test whether there is a significant difference in the mean of a target variable between two groups.
+
+#! Why we did multivariate analysis?
+
+Multivariate analysis:
+
+* Examines relationships between multiple variables simultaneously. For example, what is the relationship between the number of bedrooms, number of bathrooms, and the sale price of a house?
+* Uncovers complex interactions not visible in bivariate analysis. For example, how does the relationship between the number of bedrooms and the sale price change when the number of bathrooms is considered?
+* Predicts outcomes based on multiple predictors. For example, given the number of bedrooms, number of bathrooms, and the square footage of a house, what is the predicted sale price?
+* Reduces dimensionality for simpler analysis. For example, instead of analyzing 10 variables, a multivariate analysis can be used to reduce the dimensionality to 2 or 3 variables that capture most of the information.
