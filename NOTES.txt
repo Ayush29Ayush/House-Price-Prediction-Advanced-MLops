@@ -59,3 +59,42 @@ Multivariate analysis:
 * Uncovers complex interactions not visible in bivariate analysis. For example, how does the relationship between the number of bedrooms and the sale price change when the number of bathrooms is considered?
 * Predicts outcomes based on multiple predictors. For example, given the number of bedrooms, number of bathrooms, and the square footage of a house, what is the predicted sale price?
 * Reduces dimensionality for simpler analysis. For example, instead of analyzing 10 variables, a multivariate analysis can be used to reduce the dimensionality to 2 or 3 variables that capture most of the information.
+
+-------------------------------------------
+
+Now we will install all the libraries and dependencies for the project:
+
+1. python3.11 -m venv venv2                     # Using 3.11.4 version as ZenML works till version 3.11
+2. pip install -r requirements.txt
+
+The project can only be executed with a ZenML stack that has an MLflow experiment tracker and model deployer as a component. Configuring a new stack with the two components are as follows:
+
+3. zenml integration install mlflow -y
+4. zenml experiment-tracker register mlflow_tracker --flavor=mlflow
+5. zenml model-deployer register mlflow --flavor=mlflow
+6. zenml stack register local-mlflow-stack -a default -o default -d mlflow -e mlflow_tracker --set
+
+"
+(venv2) PS D:\prices-predictor-system> zenml stack register local-mlflow-stack -a default -o default -d mlflow -e mlflow_tracker --set
+Stack 'local-mlflow-stack' successfully registered!
+          Stack Configuration
+┏━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━┓
+┃ COMPONENT_TYPE     │ COMPONENT_NAME ┃
+┠────────────────────┼────────────────┨
+┃ ORCHESTRATOR       │ default        ┃
+┠────────────────────┼────────────────┨
+┃ MODEL_DEPLOYER     │ mlflow         ┃
+┠────────────────────┼────────────────┨
+┃ EXPERIMENT_TRACKER │ mlflow_tracker ┃
+┠────────────────────┼────────────────┨
+┃ ARTIFACT_STORE     │ default        ┃
+┗━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━┛
+      'local-mlflow-stack' stack       
+No labels are set for this stack.
+Stack 'local-mlflow-stack' with id 'b0f1f947-7b84-4eeb-b9c7-33696164baf3' is owned by user default.
+Active global stack set to:'local-mlflow-stack'
+"
+
+-------------------------------------------
+
+#! Now we will start with making pipelines
