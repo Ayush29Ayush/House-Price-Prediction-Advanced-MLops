@@ -18,4 +18,5 @@ __pycache__/
 # Ignore environment files
 .env
 venv/
+venv2/
 *.egg-info/
